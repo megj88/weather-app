@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4591b4f64b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+      <div class="container p-4 m-4">
+        <div class="border">
+      
+            <div class="weather">
+              <div class="col-5">
+          <form id="search-form">
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            class="city-search"
+            id="search-city"
+          />
+          <button 
+          type="submit" 
+          class="btn btn-primary search-button"
+          >
+            Search
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary search-button"
+            id="current-location"
+            
+          >
+            Current Location
+          </button>
+            </div>
+     
+          </div>
+          </div>
+
+      
+        <div class="row">
+          <div class="col mt-3">       
+            <h3 id="current-description">Sunny</h3>
+            <span id="temperature-value">It is currently 17°</span> |
+            Humidity: <span id="humidity"></span>% |
+            Wind: <span id="wind"></span> km/h
+                 
+            
+          </div>
+          <div class="location col mt-3">
+            <h3 class="cityName">Bari</h3>
+            
+            <h5 id="current-date"></h5>
+          </div>
+        </div>
+        <div class="p-3 border">
+          <h3 class="weekly-forecast p-2">Your week ahead</h3>
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title border">Monday</h5>
+                  <i class="fa-solid fa-sun"></i>
+                  <p class="temperature border">15 / 15°</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="border card-title">Tuesday</h5>
+                  <i class="fa-solid fa-cloud-sun-rain"></i>
+                  <p class="temperature border">15 / 15°</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="border card-title">Wednesday</h5>
+                  <i class="fa-solid fa-cloud"></i>
+                  <p class="temperature border">15 / 15°</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="border card-title">Thursday</h5>
+                  <i class="fa-solid fa-sun"></i>
+                  <p class="temperature border">15 / 15°</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="border card-title">Friday</h5>
+                  <i class="fa-solid fa-cloud-sun"></i>
+                  <p class="temperature border">15 / 15°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/src/index.js"></script>
+</html>
