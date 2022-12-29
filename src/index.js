@@ -27,7 +27,7 @@ function formatDate(date) {
 }
 
 let currentTime = document.querySelector("#current-date");
-currentTime.innerHTML = formatDate(todayIs);
+currentTime.innerHTML = `It is currently ${formatDate(todayIs)} for you`;
 
 //Display weather
 
